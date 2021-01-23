@@ -1,14 +1,66 @@
-body {
-    font-family: system-ui;
-    
-    background: linear-gradient(270deg, #3bf0c2, #14b3d2);
-    background-size: 400% 400%;
-
-    animation: anim 5s ease infinite;
+:root {
+    --main-bg-color: #A0D0F8;
+    --main-text-color: white;
+    --main-emphasis: #EA5C5A;
 }
 
-@keyframes anim {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+body {
+    font-family: system-ui;
+    background-color: var(--main-bg-color);
+}
+
+.misc-link {
+    color: var(--main-emphasis);
+    padding: 28px;
+    font-size: 2em;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.border-emphasis {
+    border: var(--main-emphasis) 10px double;
+}
+
+.profile-img {
+    border-radius: 200px;
+    width:200px;
+}
+
+h1 {
+    color: var(--main-emphasis);
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+.job-title {
+    color: #3f4850;
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.line {
+    border-bottom: var(--main-emphasis) 7px double;
+    margin-right: 100px;
+}
+
+.my-bio {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-main {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
 }
